@@ -26,7 +26,7 @@
     }
 
     function move(e) {
-        e = e || Drag.fixEvent(window.event);
+        e = e || fixEvent(window.event);
         var ex = e.pageX;
         var ey = e.pageY;
         var x = _dest.style.left ? parseInt(_dest.style.left) : 0;
